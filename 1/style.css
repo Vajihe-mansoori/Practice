@@ -1,0 +1,29 @@
+body {
+  background: rgb(191, 231, 245);
+  text-align: center;
+}
+.wrappar {
+  width: 100%;
+
+  padding: 28px;
+  box-sizing: border-box;
+}
+.wrappar img {
+  width: 350px;
+  height: 250px;
+}
+.circle {
+  width: 100px;
+  padding: 50px 0;
+  line-height: 0;
+  background: pink;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 60px auto;
+  transition: background 1s;
+}
+.circle:hover {
+  background-color: salmon;
+  transform: rotate(360deg);
+}
