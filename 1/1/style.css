@@ -44,6 +44,8 @@ body {
   animation-fill-mode: both;
   /* animation-delay: 2s; */
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* animation-timing-function: cubic-bezier(0, 0.77, 1, .28); */
 }
 .luigi {
   width: 100px;
@@ -55,7 +57,22 @@ body {
   animation-duration: 5s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
-  animation-direction: reverse;
+  animation-timing-function: linear;
+  /* animation-direction: reverse; */
+}
+.cloud {
+  position: absolute;
+}
+.cloud1 {
+  width: 200px;
+  top: 120px;
+  opacity: 0.5;
+  animation: wind 80s linear infinite reverse;
+}
+.cloud2 {
+  width: 300px;
+  top: 0;
+  animation: wind 50s linear infinite reverse;
 }
 @keyframes drive {
   from {
@@ -63,5 +80,13 @@ body {
   }
   to {
     transform: translateX(1500%);
+  }
+}
+@keyframes wind {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 100%;
   }
 }
