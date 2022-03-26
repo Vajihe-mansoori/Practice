@@ -14,7 +14,7 @@ body {
   padding: 0;
   text-transform: uppercase;
   font-size: 10em;
-  color: rgba(255, 255, 255, 0.842);
+  color: rgba(255, 255, 255, 0.1);
   background-image: url(img.png);
   background-repeat: repeat-x;
   -webkit-background-clip: text;
