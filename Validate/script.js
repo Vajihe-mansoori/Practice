@@ -42,7 +42,7 @@ function validateEmail() {
     emailError.innerHTML = "Email is required";
     return false;
   }
-  if (!email.match(/^[A-Za-z]._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+  if (!email.match(/^[A-Za-z]\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
     emailError.innerHTML = "Email Invalid";
     return false;
   }
@@ -54,6 +54,7 @@ function validateMassage() {
   let message = document.getElementById("contact-massage").value;
   let required = 30;
   let left = required - message.length;
+
   if (left > 0) {
     messageError.innerHTML = left + "more characters required";
     return false;
